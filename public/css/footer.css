@@ -1,0 +1,42 @@
+footer{
+
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.footer li {
+    list-style: none;
+    color: gainsboro;
+}
+
+.footer ul {
+    padding: 10px 50px;
+}
+
+.footer a {
+    text-decoration: underline;
+    color: gainsboro;
+}
+
+.ftital {
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.copyright {
+    background-color: black;
+    color: gainsboro;
+    text-align: center;
+    font-size: 16px;
+}

@@ -1,0 +1,62 @@
+<div class="bottompart">
+  <div class="formpart">
+    <form method="post" action="/user/registration">
+      <h2>Register</h2>
+
+      <label for="firstname">First Name<span
+          style="color: red;"
+        >*</span></label>
+      <input
+        class="inputbox"
+        id="firstname"
+        name="firstname"
+        type="text"
+        value="{{values.firstname}}"
+      />
+      {{#if validation.firstname}}
+        <br /><span style="color: red;">{{validation.firstname}}</span><br />
+      {{/if}}
+
+      <label for="lastname" style="margin-top: 0.5cm;">Last Name<span
+          style="color: red;"
+        >*</span></label>
+      <input
+        class="inputbox"
+        id="lastname"
+        type="text"
+        name="lastname"
+        value="{{values.lastname}}"
+      />
+      {{#if validation.lastname}}
+        <br /><span style="color: red;">{{validation.lastname}}</span><br />
+      {{/if}}
+
+      <label for="email" style="margin-top: 0.5cm;">Email Id<span
+          style="color: red;"
+        >*</span></label>
+      <input
+        class="inputbox"
+        id="email"
+        type="text"
+        name="email"
+        value="{{values.email}}"
+      />
+      {{#if validation.email}}
+        <br /><span style="color: red;">{{validation.email}}</span><br />
+      {{/if}}
+
+      <!--
+                intetionally left value attribute unattended in password section I want user to enter password everytime.
+            -->
+      <label for="password">Password<span style="color: red;">*</span></label>
+      <input class="inputbox" id="password" name="password" type="password" />
+      {{#if validation.password}}
+        <br /><span style="color: red;">{{validation.password}}</span><br />
+      {{/if}}
+
+      <button class="submit-button state-0"><span
+          class="pre-state-msg"
+        >Submit</span></button>
+    </form>
+  </div>
+</div>

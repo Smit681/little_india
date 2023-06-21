@@ -1,0 +1,55 @@
+<div class="navBlock"></div>
+
+<!-- Creating bottom part form img and form -->
+<div class="bottompart">
+
+  <!-- Form Part -->
+  <div class="formpart">
+    <form method="post" action="/user/signIn">
+      <h2>Log In</h2>
+
+      <label for="email" style="margin-top: 0.5cm;">Email Id<span
+          style="color: red;"
+        >*</span></label>
+      <input
+        class="inputbox"
+        id="email"
+        type="text"
+        name="email"
+        value="{{values.email}}"
+      />
+      {{#if validation.email}}
+        <br /><span style="color: red;">{{validation.email}}</span><br />
+      {{/if}}
+
+      <label for="password">Password<span style="color: red;">*</span></label>
+      <input
+        class="inputbox"
+        id="password"
+        name="password"
+        type="password"
+        value="{{values.password}}"
+      />
+      {{#if validation.password}}
+        <br /><span style="color: red;">{{validation.password}}</span><br />
+      {{/if}}
+      <div class="radios">
+        <input
+          type="radio"
+          id="customer"
+          name="choose"
+          value="Customer"
+          checked
+        />&ensp;
+        <label for="customer">Customer</label><br />&emsp;  
+        <input type="radio" id="admin" name="choose" value="Data Entry Clerk" />
+         
+        <label for="admin">Data Entry Clerk</label><br />
+      </div>
+      <button class="submit-button state-0"><span
+          class="pre-state-msg"
+        >Submit</span></button>
+      <div class="donot">Don't Have Account? <a href="/user/registration">Sign Up</a></div>
+    </form>
+  </div>
+</div>

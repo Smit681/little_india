@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Pacifico&display=swap');
+
+
+.navbar{
+  box-shadow: -1px 5px 5px whitesmoke ;
+}
+
+.navBlock{
+  height: 64px;
+  width: 100%;
+}
+
+.wrap_img_brand{
+  display: flex;
+}
+
+.navbar-brand {
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  color: rgb(120, 31, 31) !important;
+  align-self: center;
+}
+
+.nav-link{
+  color: rgb(120, 31, 31);
+  font-family: 'Chelsea Market', cursive;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.nav-link:hover{
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+
+.navbar-toggler {
+  margin-right: 1rem;
+}
+
+.cart-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.first_cart{
+  display: none;
+}
+
+@media screen and (max-width: 992px){
+  .second_cart{
+    display: none;
+  }
+  .first_cart{
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 410px){
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+}
+

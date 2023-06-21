@@ -1,0 +1,52 @@
+<div class="formpart">
+  <form
+    action="/kit/add"
+    method="post"
+    enctype="multipart/form-data"
+    class="addkit"
+  >
+    <div>
+      <label for="Title">Title</label>
+      <input type="text" id="Title" name="Title" />
+    </div>
+
+    <div>
+      <label for="ing">Ingredients</label>
+      <input type="text" id="ing" name="ing" />
+    </div>
+    <div>
+      <label for="des">Description</label>
+      <input type="text" id="des" name="des" />
+    </div>
+    <div>
+      <label for="cat">Category</label>
+      <input type="text" id="cat" name="cat" />
+    </div>
+    <div>
+      <label for="price">Price</label>
+      <input type="text" id="price" name="price" />
+    </div>
+    <div>
+      <label for="time">Cooking Time</label>
+      <input type="text" id="time" name="time" />
+    </div>
+    <div>
+      <label for="ser">Servings</label>
+      <input type="text" id="ser" name="ser" />
+    </div>
+    <div>
+      <label for="cal">Calories</label>
+      <input type="text" id="cal" name="cal" />
+    </div>
+    <div>
+      <label>Is it a top meal?</label>
+      <input type="radio" name="choose" id="true" value="true" checked />
+      <label for="true">True</label>
+      <input type="radio" name="choose" id="false" value="false" />
+      <label for="false">False</label>
+    </div>
+
+    <input type="file" id="pic" name="pic" accept="image/*" />
+    <button type="submit" class="submit-button state-0">Submit</button>
+  </form>
+</div>

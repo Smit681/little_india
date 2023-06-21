@@ -1,0 +1,19 @@
+<div class="navBlock"></div>
+
+{{#if added}}
+<div class="tital">Your item is added to your cart. Find more in our menu.</div>
+{{/if}}
+
+{{#each mealkits}}
+<div class="tital">{{this.[0].category}}</div>
+<div class="flexcards">
+    {{#each this}}
+    <div class="cards" onclick="window.location.href = '/cart/display/{{_id}}'">
+        <img src={{image_url}} alt="" class="card-img">
+        <h2 class="cardtital">{{tital}}</h2>
+        <p class="para">{{descrition}}</p>
+        <h3 class="prc">${{price}}</h2>
+    </div>
+    {{/each}}
+</div>
+{{/each}}

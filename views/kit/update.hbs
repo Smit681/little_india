@@ -1,0 +1,59 @@
+<div class="formpart updatekit">
+  <form
+    action="/kit/update"
+    method="post"
+    enctype="multipart/form-data"
+    class="addkit"
+  >
+
+    <div>
+      <label for="Title">Title</label>
+      <input type="text" id="Title" name="Title" value="{{a.tital}}" />
+    </div>
+
+    <div>
+      <label for="ing">Ingredients</label>
+      <input type="text" id="ing" name="ing" value="{{a.ingrediants}}" />
+    </div>
+    <div>
+      <label for="des">Description</label>
+      <input type="text" id="des" name="des" value="{{a.descrition}}" />
+    </div>
+    <div>
+      <label for="cat">Category</label>
+      <input type="text" id="cat" name="cat" value="{{a.category}}" />
+    </div>
+    <div>
+      <label for="price">Price</label>
+      <input type="text" id="price" name="price" value="{{a.price}}" />
+    </div>
+    <div>
+      <label for="time">Cooking Time</label>
+      <input type="text" id="time" name="time" value="{{a.cooking_time}}" />
+    </div>
+    <div>
+      <label for="ser">Servings</label>
+      <input type="text" id="ser" name="ser" value="{{a.serving}}" />
+    </div>
+    <div>
+      <label for="cal">Calories</label>
+      <input
+        type="text"
+        id="cal"
+        name="cal"
+        value="{{a.calories_per_serving}}"
+      />
+    </div>
+    <div>
+      <label>Is it a top meal?</label>
+      <input type="radio" name="choose" id="true" value="true" checked />
+      <label for="true">True</label>
+      <input type="radio" name="choose" id="false" value="false" />
+      <label for="false">False</label>
+    </div>
+
+    <input type="file" id="pic" name="pic" accept="image/*" />
+    <button type="submit" class="submit-button state-0">Submit</button>
+
+  </form>
+</div>

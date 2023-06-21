@@ -1,0 +1,92 @@
+:root {
+  --p1: calc(1rem *);
+}
+
+.menu-highlights {
+  background-image: url("/pictures/white-waves.webp");
+  width: 100%;
+  height: auto;
+}
+
+.menu-high-title {
+  color: rgb(120, 31, 31);
+  font-family: "Chelsea Market", cursive;
+  font-weight: bolder;
+  text-align: center;
+  padding: 3rem 0rem 2rem;
+  font-size: 3rem;
+}
+
+.row div {
+  margin-bottom: 2rem;
+  padding: 0;
+  position: relative;
+}
+
+.row div img{
+    border-radius: 1rem;
+    box-shadow: 3px 3px 5px;
+}
+
+.left {
+  margin-right: 2rem;
+}
+
+.menu-grid {
+  padding: 0 20vw;
+}
+
+.menu_image {
+  width: 100%;
+  height: 20vw;
+}
+
+.menu_type_container{
+    position: absolute !important;
+    display: inline-block;
+    right: 5%;
+    bottom: 3%;
+}
+
+.menu_type_container button{
+    font-size: larger;
+    font-weight: bold;
+    border: 2px solid;
+    background-color: rgba(0, 0, 0, 0.283);
+}
+
+.menu_type{
+    font-size: 2.5vw;
+    font-family: "Chelsea Market", cursive;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 5px 5px 20px rgb(14 14 14);
+    margin-bottom: 0.5rem !important;
+    letter-spacing: 2px;
+}
+
+/* medium Screen */
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .menu-grid {
+    padding: 0 5vw;
+  }
+  .menu_image {
+    height: 25vw;
+  }
+  .menu_type{
+    font-size: 3vw;
+  }
+}
+
+/* Small Screen */
+@media screen and (max-width: 767px) {
+  .menu-grid {
+    padding: 0 15vw;
+  }
+  .menu_image {
+    height: 45vw;
+  }
+  .menu_type{
+    font-size: 7vw;
+  }
+}

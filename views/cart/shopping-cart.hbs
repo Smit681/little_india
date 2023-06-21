@@ -1,0 +1,61 @@
+<style>
+   .a{
+       font-family: cursive; 
+       font-size: 35px;
+       color: red;
+       
+   }
+    .orderlist{
+   list-style: none;
+   counter-reset: item;
+ }
+ .orderlist li {
+   counter-increment: item;
+   margin-bottom: 5px;
+ }
+ .orderlist li:before {
+   margin-right: 10px;
+   content: counter(item);
+   background: red;
+   border-radius: 100%;
+   color: white;
+   width: 1em;
+   font-size: 25px;
+   text-align: center;
+   display: inline-block;
+ }
+ .ckot{
+    background-color: rgba(0, 0, 255, 0.493);
+    color: white;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+</style>
+
+{{#if found}}
+
+    <div class="container">
+        <div class="tital">Shopping Cart</div>
+    <div class="card">
+        <ol class="orderlist">
+            {{#each kits}}
+            <li><span class="a">{{tital}}</span>
+            <h2>Quantity: {{quantity}}</h4>
+            <h2>Price: ${{price}}</h2>  
+            </li>
+            {{/each}}
+        </ol>
+        <br>
+        <h1 style="margin-left: 1vw;">Order total: <span class="a">${{totalAmount}}</span></h1> 
+        <button 
+        type="button" 
+        class="btn btn-default btn-lg ckot" 
+        onclick="window.location.href='/cart/checkout'"> Checkout
+        </button> 
+    </div>
+
+{{else}}
+    <div class="tital">You don't anything in your cart. Please add mealkits to your cart from our delicious collection.</div>
+    <button onclick="window.location.href = '/general/onthemenu' "></button>
+{{/if}}

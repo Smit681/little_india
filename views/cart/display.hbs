@@ -1,0 +1,44 @@
+<style>
+  .kitTitle{ font-size: 55px; color: red; border-bottom: 4px solid lavender;
+  font-family: 'Lobster', cursive; text-align: center;} .kitbottom{ border-top:
+  4px solid lavender; background-color: khaki; } span{ color: red; font-size:
+  30px; font-family: cursive; } .short-div{ font-family: cursive; font-size:
+  20px; } .kitimg{ border-radius: 50%; max-height: 400px; border: 2px solid
+  blue; margin: 20px; } .kitinfo{ display: flex; align-items: center;
+  justify-content:space-evenly; margin:10px; flex-wrap: wrap; } .sdec{
+  margin:10px; } .btm{ display: flex; justify-content: space-between;
+  align-items: center; flex-wrap: wrap;} @media only screen and (max-width:
+  800px){ .kitimg { height: 200px; } }
+</style>
+
+<div class="navBlock"></div>
+<div class="tital">{{a.tital}}</div>
+
+<div class="kitinfo">
+  <div class="calcat">
+    <div class="short-div"><span>Category: </span><br />{{a.category}}</div>
+    <div class="short-div">
+      <span>Calories per serving:</span><br />
+      {{a.calories_per_serving}}</div>
+    <div class="short-div">
+      <span>Servings:</span><br />
+      {{a.serving}}</div>
+  </div>
+  <img src="{{a.image_url}}" alt="" class="kitimg" />
+  <div class="prtime">
+    <div class="short-div"><span>Price:</span><br />${{a.price}}</div>
+
+    <div class="short-div"><span>Cooking time: </span><br />{{a.cooking_time}}
+    </div>
+  </div>
+</div>
+<div class="btm">
+  <div class="short-div sdec"><span>Description: </span><br
+    />{{a.descrition}}</div>
+  <button
+    class="btn-lg btn-primary bg-danger"
+    type="button"
+    style="height: 50px; margin:10px"
+    onclick="window.location.href = '/cart/add-kit/{{a._id}}'"
+  >Add to Cart</button>
+</div>

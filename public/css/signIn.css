@@ -1,0 +1,89 @@
+.bottompart {
+  height: 110vh;
+  width: 98.8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background: url("/pictures/signIn-background.jpg") no-repeat;
+  background-size: cover;
+  background-color: #fff;
+  position: relative;
+}
+
+.formpart {
+  width: 450px;
+  background-color: whitesmoke;
+  box-shadow: 4px 3px 20px #3535358c;
+  border-radius: 10px;
+  padding: 2rem 2rem 4rem;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.formpart input {
+  display: block;
+}
+
+.formpart form {
+  left: 50%;
+}
+
+.formpart form h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 35px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+label {
+  font-family: "Libre Baskerville", serif;
+  font-size: 15px;
+  display: block;
+}
+
+.inputbox {
+  width: 340px;
+  padding: 0.5rem;
+  border: 2px solid #b9b6b6;
+  margin-bottom: 0.6rem;
+  border-radius: 0.3rem;
+  font-family: "Roboto", sans-serif;
+  color: #615a5a;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.radios {
+  display: flex;
+  align-items: center;
+}
+
+.submit-button {
+  display: block;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 1px;
+  height: 38px;
+  width: 340px;
+  line-height: 38px;
+  overflow: hidden;
+  background: #4dbecf;
+  border-radius: 3px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 5px;
+}
+
+.donot{  
+  font-family: "Libre Baskerville", serif;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 7px;
+}
